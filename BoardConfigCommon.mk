@@ -80,7 +80,7 @@ TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(COMMON_PATH)/framework_compatibility_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    vendor/pixelage/config/device_framework_matrix.xml
 DEVICE_MATRIX_FILE += \
     hardware/qcom-caf/common/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
@@ -127,7 +127,7 @@ BOARD_SUPER_PARTITION_SIZE := 6157737984
 BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
 BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := odm product system system_ext vendor
 BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 6153543680 # (BOARD_SUPER_PARTITION_SIZE - 4194304) 4MiB overhead
--include vendor/lineage/config/BoardConfigReservedSize.mk
+-include vendor/pixelage/config/BoardConfigReservedSize.mk
 
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
