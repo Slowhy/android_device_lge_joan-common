@@ -26,4 +26,4 @@ odm                                         /odm                   ext4    ro,ba
 /devices/soc/a800000.ssusb/a800000.dwc3/xhci-hcd.0.auto/usb*       auto    auto    defaults                                       voldmanaged=usb:auto
 
 # ZRAM
-/dev/block/zram0                            none                   swap    defaults                                                                  zramsize=2147483648
+/dev/block/zram0                            none                   swap    defaults                                                                  zramsize=50%,zram_backingdev_size=512M
